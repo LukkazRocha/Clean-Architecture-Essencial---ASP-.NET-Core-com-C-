@@ -1,5 +1,5 @@
 ﻿using CleanArchMvc.Domain.Validation;
-using System.Collections;
+using System.Collections.Generic;
 
 namespace CleanArchMvc.Domain.Entities
 {
@@ -25,7 +25,7 @@ namespace CleanArchMvc.Domain.Entities
             ValidateDomain(name);
         }
 
-        public ICollection Products { get; set; }
+        public ICollection<Product> Products { get; set; }
 
         private void ValidateDomain(string name)
         {
